@@ -24,7 +24,7 @@ set showmatch
 set hlsearch
 
 "Cancel search with escape
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+"nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
 "Keep things in memory
 set hidden
@@ -44,7 +44,8 @@ set expandtab
 "Remap escape key
 inoremap jh <esc>
 
-" Always show status line
-"set laststatus=2
+"Set leader key
+let mapleader=" "
 
-
+"Escape search with <leader><space>
+nnoremap <leader><space> :nohl<cr>

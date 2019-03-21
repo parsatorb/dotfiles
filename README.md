@@ -1,1 +1,3 @@
-# Setup of machine, so far got basic vim in and nothing else
+# Setup of machine
+So far got basic vim in and nothing else
+
