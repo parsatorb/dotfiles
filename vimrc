@@ -4,7 +4,6 @@ execute pathogen#infect()
 "Turn on syntax highlighting based on filetype
 filetype on
 syntax on
-
 "Set colour scheme based on ~/.vim/colors
 colorscheme Tomorrow-Night
 
@@ -64,8 +63,9 @@ let g:lightline = {
       \ }
 
 "Nerdtree configs
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd p
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
