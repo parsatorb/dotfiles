@@ -1,6 +1,12 @@
 #rm -rf ~/.vim
 #mkdir ~/.vim
 cd ~/.vim
+rm ~/.vimrc
+
+#TODO: 
+#Check if build-essentials installed, install build-essentials
+#Check if ruby-dev installed, install ruby-dev
+#Check if Make installed, install make
 
 # Simlink vimrc to home
 ln -s ~/.vim/vimrc ~/.vimrc
@@ -10,7 +16,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 #Adding Command-T pathogen
-git submodule add -f https://github.com/wincent/command-t.git bundle/command-t
+git clone https://github.com/wincent/command-t.git bundle/command-t
 cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t
 ruby extconf.rb
 make
@@ -18,12 +24,10 @@ make
 cd ~/.vim
 
 #Adding lightline 
-git submodule add -f git@github.com:itchyny/lightline.vim.git bundle/lightline
+git clone git@github.com:itchyny/lightline.vim.git bundle/lightline
 
 #Adding nerdcommenter
-git submodule add -f git@github.com:scrooloose/nerdcommenter.git bundle/nerdcommenter
+git clone git@github.com:scrooloose/nerdcommenter.git bundle/nerdcommenter
 
 #Adding nerdtree
-git submodule add -f git@github.com:scrooloose/nerdtree.git bundle/nerdtree
-
-git submodule init
+git clone git@github.com:scrooloose/nerdtree.git bundle/nerdtree
