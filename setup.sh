@@ -1,7 +1,7 @@
-#rm -rf ~/.vim
-#mkdir ~/.vim
+rm -rf ~/.vim
+mkdir ~/.vim
+cp -r ./* ~/.vim
 cd ~/.vim
-rm ~/.vimrc
 
 #TODO: 
 #Check if build-essentials installed, install build-essentials
