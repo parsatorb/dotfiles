@@ -24,10 +24,10 @@ make
 cd ~/.vim
 
 #Adding lightline 
-git clone git@github.com:itchyny/lightline.vim.git bundle/lightline
+git clone https://github.com/itchyny/lightline.vim.git bundle/lightline
 
 #Adding nerdcommenter
-git clone git@github.com:scrooloose/nerdcommenter.git bundle/nerdcommenter
+git clone https://github.com/preservim/nerdcommenter.git bundle/nerdcommenter
 
 #Adding nerdtree
-git clone git@github.com:scrooloose/nerdtree.git bundle/nerdtree
+git clone https://github.com/preservim/nerdtree.git bundle/nerdtree
