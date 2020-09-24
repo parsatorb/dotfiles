@@ -1,7 +1,12 @@
+cat ./.bashrc >> ~/.bashrc
+
 rm -rf ~/.vim
 mkdir ~/.vim
 cp -r ./* ~/.vim
 cd ~/.vim
+
+#Remove unnecessary file
+rm .bashrc
 
 #TODO: 
 #Check if build-essentials installed, install build-essentials
