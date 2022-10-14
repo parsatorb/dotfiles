@@ -36,3 +36,5 @@ git clone https://github.com/preservim/nerdcommenter.git bundle/nerdcommenter
 
 #Adding nerdtree
 git clone https://github.com/preservim/nerdtree.git bundle/nerdtree
+
+cat aliases.bash >> ~/.bash_profile
